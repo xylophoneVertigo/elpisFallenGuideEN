@@ -97,7 +97,7 @@ html {
   background-size:cover;
 }
 body {
-  max-width:1800;
+  max-width:1000;
   margin:25px auto;
 }
 header, #content, footer { 
@@ -247,7 +247,7 @@ header h1 {
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 8px;
   align-content: flex-start;
 }
 
