@@ -140,5 +140,39 @@ ul.main-menu li a.active {
   display:block;
 }
 
+/*New code for banner I added */
+/* Banner styles */
+#banner {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-bottom: 3px solid #EF6D3D;
+  padding: 30px 25px;
+  text-align: center;
+  margin-bottom: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
 
+.banner-content h1 {
+  color: #FFFFFF;
+  font-size: 4.2rem;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  letter-spacing: 0.1rem;
+}
+
+.banner-subtitle {
+  color: #cfd2da;
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+
+/* Adjust header spacing */
+header {
+  margin-top: 0;
+}
+
+header h1 {
+  font-size: 2.4rem;
+}
 
