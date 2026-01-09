@@ -143,7 +143,7 @@ ul.main-menu li a.active {
 /*New code for banner I added */
 /* Banner styles */
 #banner {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: #000000;
   border-bottom: 3px solid #EF6D3D;
   padding: 30px 25px;
   text-align: center;
