@@ -176,3 +176,138 @@ header h1 {
   font-size: 2.4rem;
 }
 
+/* Added styling for the tier list */
+/* Tier List Styles */
+.tier-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tier-header-row,
+.tier-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tier-header-cell {
+  background: rgba(239, 109, 61, 0.3);
+  border: 2px solid #EF6D3D;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+
+.tier-label-cell {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #cfd2da;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/* Tier label colors */
+.apex-tier {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: #FFD700;
+  color: #FFD700;
+}
+
+.t0-tier {
+  background: rgba(192, 192, 192, 0.2);
+  border-color: #C0C0C0;
+  color: #C0C0C0;
+}
+
+.t1-tier {
+  background: rgba(205, 127, 50, 0.2);
+  border-color: #CD7F32;
+  color: #CD7F32;
+}
+
+.t2-tier {
+  background: rgba(100, 149, 237, 0.2);
+  border-color: #6495ED;
+  color: #6495ED;
+}
+
+.tier-cell {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(207, 210, 218, 0.3);
+  padding: 15px;
+  min-height: 150px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+
+/* Character Card */
+.character-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.character-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #cfd2da;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.character-name {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 3px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.character-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: center;
+}
+
+.tag {
+  background: rgba(239, 109, 61, 0.6);
+  color: #FFFFFF;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tier-header-row,
+  .tier-row {
+    grid-template-columns: 60px 1fr;
+    gap: 5px;
+  }
+  
+  .tier-header-cell,
+  .tier-cell {
+    grid-column: span 2;
+  }
+  
+  .tier-label-cell {
+    grid-column: 1;
+    grid-row: span 1;
+  }
+}
