@@ -136,7 +136,7 @@ iframe {
 }
 
 .banner-logo {
-  height: 60px;
+  height: auto;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
