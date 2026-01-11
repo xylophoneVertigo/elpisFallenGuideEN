@@ -517,19 +517,19 @@ header {
     position: relative;
   }
   
-  /* Add class labels above each cell on mobile */
-  .tier-cell:nth-child(2):before { content: "Ghosthunter"; }
-  .tier-cell:nth-child(3):before { content: "Spellweaver"; }
-  .tier-cell:nth-child(4):before { content: "Voidblade"; }
-  .tier-cell:nth-child(5):before { content: "Ironclad"; }
+/* Add class labels above each cell on mobile */
+.tier-cell:nth-child(2):before { content: "Ironclad"; }
+.tier-cell:nth-child(3):before { content: "Voidblade"; }
+.tier-cell:nth-child(4):before { content: "Spellweaver"; }
+.tier-cell:nth-child(5):before { content: "Ghosthunter"; }
   
   .tier-cell:before {
     display: block;
     background: rgba(239, 109, 61, 0.3);
     border-bottom: 2px solid #EF6D3D;
-    padding: 8px;
+    padding: 5px;           /* Changed from 8px */
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.2rem;      /* Changed from 1.4rem */
     text-align: center;
     margin: -15px -15px 10px -15px;
   }
