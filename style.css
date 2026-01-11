@@ -129,7 +129,7 @@ ul.main-menu li a:hover {
 }
 ul.main-menu li a.active {
   color:#FFFFFF;
-  border-bottom-color:#EF6D3D;
+  border-bottom-color:#00FFFF;
 }
 
 /* Utility classes */
@@ -205,24 +205,25 @@ header h1 {
 .tier-header-row,
 .tier-row {
   display: grid;
-  grid-template-columns: 40px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr;
   gap: 10px;
   margin-bottom: 10px;
 }
 
 .tier-header-cell {
-  background: rgba(239, 109, 61, 0.3);
-  border: 2px solid #EF6D3D;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #00FFFF;  /* Cyan underline */
   padding: 15px 10px;
   text-align: center;
   font-weight: bold;
   font-size: 1.6rem;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
 .tier-label-cell {
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid #cfd2da;
+  background: transparent;
+  border: none;
   padding: 15px 10px;
   text-align: center;
   font-weight: bold;
@@ -230,7 +231,13 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 0;
+}
+
+/* Hide the empty top-left cell */
+.tier-header-row .tier-label-cell {
+  background: transparent;
+  border: none;
 }
 
 /* Tier label colors */
@@ -314,19 +321,45 @@ header h1 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .tier-header-row,
-  .tier-row {
-    grid-template-columns: 60px 1fr;
-    gap: 5px;
+  /* Stack everything vertically on mobile */
+  .tier-header-row {
+    display: none;  /* Hide the header row on mobile */
   }
   
-  .tier-header-cell,
-  .tier-cell {
-    grid-column: span 2;
+  .tier-row {
+    display: block;  /* Switch from grid to block layout */
+    margin-bottom: 20px;
+    border: 2px solid rgba(207, 210, 218, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
   }
   
   .tier-label-cell {
-    grid-column: 1;
-    grid-row: span 1;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .tier-cell {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  /* Add class labels above each cell on mobile */
+  .tier-cell:nth-child(2):before { content: "Ghosthunter"; }
+  .tier-cell:nth-child(3):before { content: "Spellweaver"; }
+  .tier-cell:nth-child(4):before { content: "Voidblade"; }
+  .tier-cell:nth-child(5):before { content: "Ironclad"; }
+  
+  .tier-cell:before {
+    display: block;
+    background: rgba(239, 109, 61, 0.3);
+    border-bottom: 2px solid #EF6D3D;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: -15px -15px 10px -15px;
   }
 }
