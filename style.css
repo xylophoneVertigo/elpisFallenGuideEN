@@ -195,6 +195,56 @@ header h1 {
   font-size: 2.4rem;
 }
 
+/* Accordion Styles */
+.accordion {
+  margin-bottom: 15px;
+  border: 2px solid rgba(207, 210, 218, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  background: rgba(0, 255, 255, 0.2);
+  border: none;
+  border-bottom: 2px solid #00FFFF;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.accordion-header:hover {
+  background: rgba(0, 255, 255, 0.3);
+}
+
+.accordion-header:after {
+  content: ' ▼';
+  float: right;
+  transition: transform 0.3s;
+}
+
+.accordion-header.active:after {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0 20px;
+}
+
+.accordion-content.active {
+  max-height: 500px;
+  padding: 20px;
+}
+
 /* Added styling for the tier list */
 /* Tier List Styles */
 .tier-table {
