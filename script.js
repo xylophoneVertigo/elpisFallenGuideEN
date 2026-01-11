@@ -25,5 +25,11 @@
     // $('#content').load(region.slice(1) + '.html')
     
   });
+
+  // Accordion functionality
+  $('.accordion-header').click(function() {
+    $(this).toggleClass('active');
+    $(this).next('.accordion-content').toggleClass('active');
+  });
   
 })(jQuery);
