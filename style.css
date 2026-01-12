@@ -653,3 +653,43 @@ header {
   border: 2px solid rgba(207, 210, 218, 0.3);
   border-radius: 8px;
 }
+
+/* Bulleted list with character cards*/
+.character-list {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.character-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.character-list .character-card {
+  flex-shrink: 0;
+  margin-top: -5px; /* Aligns card with bullet */
+}
+
+.character-list .character-description {
+  flex: 1;
+  line-height: 1.6;
+  padding-top: 10px; /* Aligns text better with card */
+}
+
+/* Section title underlines */
+.section-title {
+  display: inline-block;
+  border-bottom: 3px solid #00FFFF;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Can add icons mid-sentence next to word */
+.inline-icon {
+  height: 1.2em; /* Scales with text size */
+  width: auto;
+  vertical-align: middle; /* Aligns with text baseline */
+  margin: 0 3px; /* Small spacing on both sides */
+}
