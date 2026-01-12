@@ -112,10 +112,10 @@
               <!-- Header Row -->
               <div class="tier-header-row">
                 <div class="tier-label-cell"></div>
-                <div class="tier-header-cell">Ironclad</div>
-                <div class="tier-header-cell">Voidblade</div>
-                <div class="tier-header-cell">Spellweaver</div>
-                <div class="tier-header-cell">Ghosthunter</div>
+                <div class="tier-header-cell"><img src="images/ironclad_icon.jpg" alt="ironclad" class="inline-icon">Ironclad</div>
+                <div class="tier-header-cell"><img src="images/voidblade_icon.jpg" alt="voidblade" class="inline-icon">Voidblade</div>
+                <div class="tier-header-cell"><img src="images/spellweaver_icon.jpg" alt="spellweaver" class="inline-icon">Spellweaver</div>
+                <div class="tier-header-cell"><img src="images/ghosthunter_icon.jpg" alt="ghosthunter" class="inline-icon">Ghosthunter</div>
               </div>
               
               <!-- Apex Tier Row -->
@@ -624,19 +624,19 @@
           <div id="teambuilding" class="content-region hide">
             <h2>Team Building Guide</h2>
             
-            <h3>Basics of Team Building</h3>
+            <h3 class="section-title">Basics of Team Building</h3>
             
             <ul>
               <li>A team consists of 8 units</li>
               <li>You usually want a mix of all classes:
                 <ul>
-                  <li><strong>Ironclad:</strong> Frontline defender/tank</li>
-                  <li><strong>Voidblade:</strong> Frontline damage dealer or support</li>
-                  <li><strong>Spellweaver:</strong> Midrange damage dealer, support, or healer</li>
-                  <li><strong>Ghosthunter:</strong> Backline damage dealer or support</li>
+                  <li><img src="images/ironclad_icon.jpg" alt="ironclad" class="inline-icon"> <strong>Ironclad:</strong> Frontline defender/tank</li>
+                  <li><img src="images/voidblade_icon.jpg" alt="voidblade" class="inline-icon"> <strong>Voidblade:</strong> Frontline damage dealer or support</li>
+                  <li><img src="images/spellweaver_icon.jpg" alt="spellweaver" class="inline-icon"> <strong>Spellweaver:</strong> Midrange damage dealer, support, or healer</li>
+                  <li><img src="images/ghosthunter_icon.jpg" alt="ghosthunter" class="inline-icon"> <strong>Ghosthunter:</strong> Backline damage dealer or support</li>
                 </ul>
               </li>
-              <li>The standard team structure for most content is 2 of each class (2-2-2-2)</li>
+              <li>The standard team structure for most content is 2 of each class (2G-2S-2V-2I)</li>
             </ul>
 
                               <!-- Old FAQ code, DEPRECATED 
@@ -670,10 +670,23 @@
                 </div>
               </div>
             </div>
-            
-            <div class="faq-item">
-              <p><strong>Q: What is the Total Assault (TA) phase?</strong></p>
-              <p><strong>A:</strong> During battle, your Total Assault meter will fill over time. Once full, you can execute the TA phase. When this phase begins, you can select units to perform their TA skill (i.e., their ultimate attack). One of each class may be selected during a single TA phase. If you have eight ghosthunter class units, then only one unit gets to use their TA skill. If you have one of each class, then four units get to use their TA skill. Additionally, TA skills have cooldowns ranging from 20 seconds to 70 seconds. A cooldown of 45+ seconds means that this unit can't use their TA skill on the next phase. The 2-2-2-2 team composition means that four units will use their TA skill every total assault phase.</p>
+
+            <div class="qa-accordion">
+              <button class="qa-accordion-header">
+                <img src="images/miam_chibi.avif" alt="Character" class="qa-character-thumb">
+                <div class="qa-question-bubble">
+                  What is the Total Assault (TA) phase?
+                </div>
+              </button>
+              
+              <div class="qa-accordion-content">
+                <div class="qa-answer-wrapper">
+                  <div class="qa-answer-bubble">
+                    During battle, your Total Assault meter will fill over time. Once full, you can execute the TA phase. When this phase begins, you can select units to perform their TA skill (i.e., their ultimate attack). One of each class may be selected during a single TA phase. If you have eight ghosthunter class units, then only one unit gets to use their TA skill. If you have one of each class, then four units get to use their TA skill. Additionally, TA skills have cooldowns ranging from 20 seconds to 70 seconds. A cooldown of 45+ seconds means that this unit can't use their TA skill on the next phase. The 2-2-2-2 team composition means that four units will use their TA skill every total assault phase.
+                  </div>
+                  <img src="images/lingyao_chibi_dress.avif" alt="Character" class="qa-character-thumb mirrored">
+                </div>
+              </div>
             </div>
             
             <h4>Elemental Advantages</h4>
@@ -686,22 +699,35 @@
               <li>For Umbra and Lumin types, they will always deal 30% extra damage to the other unit.</li>
             </ul>
             
-            <div class="faq-item">
-              <p><strong>Q: If Lumin and Umbra both deal extra damage, what's the advantage?</strong></p>
-              <p><strong>A:</strong> Units do not always fight 1v1, and we can use this to create type mismatches with enemies. Consider the following:</p>
-              <ul>
-                <li>Fire type ironclad blocks movement and takes aggro from Umbra type Voidblade.</li>
-                <li>Your lumin type ghosthunter can attack the umbra type enemy and deal extra damage due to the type advantage, while avoiding taking extra damage since a friendly fire type ironclad is taking aggro instead.</li>
-                <li>This strategy is very useful against bosses and strong single target enemies.</li>
-              </ul>
+            <div class="qa-accordion">
+              <button class="qa-accordion-header">
+                <img src="images/miam_chibi.avif" alt="Character" class="qa-character-thumb">
+                <div class="qa-question-bubble">
+                  If Lumin and Umbra both deal extra damage to each other, what's the point?
+                </div>
+              </button>
+              
+              <div class="qa-accordion-content">
+                <div class="qa-answer-wrapper">
+                  <div class="qa-answer-bubble">
+                    <p>Units do not always fight 1v1, and we can use this to create type mismatches with enemies. Consider the following:</p>
+                    <ol>
+                      <li>Fire type ironclad blocks movement and takes aggro from Umbra type Voidblade.</li>
+                      <li>Your lumin type ghosthunter can attack the umbra type enemy and deal extra damage due to the type advantage, while avoiding taking extra damage since a friendly fire type ironclad is taking aggro instead.</li>
+                      <li>This strategy is very useful against bosses and strong single target enemies.</li>
+                    </ol>
+                  </div>
+                  <img src="images/lingyao_chibi_dress.avif" alt="Character" class="qa-character-thumb mirrored">
+                </div>
+              </div>
             </div>
             
-            <h3>Advanced Team Building</h3>
+            <h3 class="section-title">Advanced Team Building</h3>
             
-            <h4>2-3-1-2 Team</h4>
+            <h4>2G-3S-1V-2I Team</h4>
             <ul>
-              <li>Against some enemies and bosses, Voidblade units can struggle to stay alive.</li>
-              <li>Deploy a voidblade unit with a 20 second cooldown (ex: Lexie), they will use their TA skill every TA phase.</li>
+              <li>Against some enemies and bosses, Voidblade units can struggle to stay alive and so we might only want to deploy a single Voidblade.</li>
+              <li>Deploy a voidblade unit with a 20 second cooldown (ex: Lexie). They will use their TA skill every TA phase.</li>
               <li>We have a few options for the third Spellweaver slot:
                 <ol>
                   <li>A healer that doesn't need to use their TA skill often if at all to keep the team alive</li>
@@ -711,7 +737,7 @@
               </li>
             </ul>
             
-            <h4>3-2-2-1 Team</h4>
+            <h4>3G-2S-2V-1I Team</h4>
             <ul>
               <li>Some battles require maximum DPS and lower frontline tanking. The risk of failure in these fights is due to running out of time or your backrow damage dealers being killed before your tank dies, so having an extra Ironclad doesn't help as much.</li>
               <li>Options for the ghosthunter units:
@@ -724,27 +750,14 @@
               </li>
             </ul>
             
-            <h4>My Strongest Team</h4>
-            <p>At the time of writing this (January 2026) my strongest team uses:</p>
-            <ul>
-              <li>Lingyao</li>
-              <li>Leticia</li>
-              <li>Asteria</li>
-              <li>Inellis</li>
-              <li>Delis</li>
-              <li>The Solace</li>
-              <li>Eclipse</li>
-              <li>Aria</li>
-            </ul>
-            <p><strong>Leader skill:</strong> Delis</p>
-            
-            <h3>Unit Synergies</h3>
+            <h3 class="section-title">Unit Synergies</h3>
             <p>These units synergize very well together and can be useful starting points when building a team.</p>
             
             <h4>DoT Team: Souffle + Ethel</h4>
             <p><strong>Key Units:</strong> Souffle, Ethel, Other DoT units (Asteria, Falcon, Absolver, Gima, Timmy, Skylark)</p>
             <ul>
-              <li>              <!-- Souffle -->
+              <li>
+                <!-- Souffle -->
                 <div class="character-card">
                   <img src="images/souffle thumbnail.jpg" alt="Souffle" class="character-thumb">
                   <div class="character-name">Souffle</div>
@@ -753,35 +766,8 @@
                     <span class="tag tag-dot">DoT</span>
                   </div>
                 </div>
-                Souffle's TA skill does extra damage for each stack of DoT, and hits three targets (or the same target three times). To maximize her DPS, we want to apply as much DoT as possible.</li>
-              <li>Ethel's TA skill does extra damage (ignores enemy defense) for each stack of DoT, and hits three targets. It's a 20 second cooldown TA, so you don't need a second Voidblade for this team (unless desired), since you want her using her TA every round.</li>
-              <li>Falcon applies DoT as long as she is shielded, Asteria will buff both Ethel and Souffle TA damage, and she also provides DoT. Timmy, Absolver, Gima, and Skylark can also be good DoT applicators.</li>
-              <li>Notice that many of these units are also Hydro type units, so can be useful against fire element bosses.</li>
-            </ul>
-            
-            <h3>Example Team</h3>
-            <div class="team-display">
-              <!-- Souffle -->
-                <div class="character-card">
-                  <img src="images/souffle thumbnail.jpg" alt="Souffle" class="character-thumb">
-                  <div class="character-name">Souffle</div>
-                  <div class="character-tags">
-                    <span class="tag tag-dps">DPS</span>
-                    <span class="tag tag-dot">DoT</span>
-                  </div>
-                </div>
-            
-              <!-- Timmy -->
-                <div class="character-card">
-                  <img src="images/timmy thumbnail.jpg" alt="Timmy" class="character-thumb">
-                  <div class="character-name">Timmy</div>
-                  <div class="character-tags">
-                    <span class="tag tag-dps">DPS</span>
-                    <span class="tag tag-aoe">AoE</span>
-                    <span class="tag tag-dot">DoT</span>
-                  </div>
-                </div>
-                
+                <span class="character-description"> Souffle's TA skill does extra damage for each stack of DoT, and hits three targets (or the same target three times). To maximize her DPS, we want to apply as much DoT as possible.</li>
+              <li>
                   <!-- Ethel -->
                   <div class="character-card">
                     <img src="images/ethel thumbnail.jpg" alt="Ethel" class="character-thumb">
@@ -790,18 +776,8 @@
                       <span class="tag tag-dps-dot">DPS (DoT)</span>
                     </div>
                   </div>
-         
-                  <!-- Asteria -->
-                  <div class="character-card">
-                    <img src="images/asteria thumbnail.jpg" alt="Asteria" class="character-thumb">
-                    <div class="character-name">Asteria</div>
-                    <div class="character-tags">
-                      <span class="tag tag-buff">Buff</span>
-                      <span class="tag tag-dot">DoT</span>
-                      <span class="tag tag-sub-dps">Sub-DPS</span>
-                    </div>
-                  </div>
-
+                <span class="character-description"> Ethel's TA skill does extra damage (ignores enemy defense) for each stack of DoT, and hits three targets. It's a 20 second cooldown TA, so you don't need a second Voidblade for this team (unless desired), since you want her using her TA every round.</li>
+              <li>
                   <!-- Falcon -->
                   <div class="character-card">
                     <img src="images/falcon thumbnail.jpg" alt="Falcon" class="character-thumb">
@@ -811,29 +787,70 @@
                       <span class="tag tag-shield">Shield</span>
                     </div>
                   </div>
-                </div>
-              </div>
-
+                <span class="character-description"> Falcon applies DoT as long as she is shielded, Asteria will buff both Ethel and Souffle TA damage, and she also provides DoT. Timmy, Absolver, Gima, and Skylark can also be good DoT applicators.</li>
+              <li>Notice that many of these units are also Hydro type units, so can be useful against fire element bosses.</li>
+            </ul>
             
             <h4>Judgement Stack: Inellis + Ivorywing</h4>
             <ul>
-              <li>Ivorywing TA skill creates an AoE damage zone around herself and one other nearby unit with a defense buff (Jessica, Kaguya, or other Ironclad or Voidblade)</li>
-              <li>Inellis leader skill boosts Ivorywing TA skill damage. Usually not worth it unless you have Ivorywing at awakening 3+.</li>
+              <li>
+                  <!-- Ivorywing -->
+                  <div class="character-card">
+                    <img src="images/ivorywing thumbnail.jpg" alt="Ivorywing" class="character-thumb">
+                    <div class="character-name">Ivorywing</div>
+                    <div class="character-tags">
+                      <span class="tag tag-sub-dps">Sub-DPS</span>
+                      <span class="tag tag-revive">Revive</span>
+                      <span class="tag tag-buff">Buff</span>
+                    </div>
+                  </div>
+                <span class="character-description">Ivorywing TA skill creates an AoE damage zone around herself and one other nearby unit with a defense buff (Jessica, Kaguya, or other Ironclad or Voidblade)</li>
               <li>Ivorywing TA skill applies a stack of judgement to the enemies in the AoE zone.</li>
-              <li>Inellis' combat skill and TA skill do additional damage for each stack of judgement.</li>
+              <li>
+                  <!-- Inellis -->
+                  <div class="character-card">
+                    <img src="images/inellis thumbnail.jpg" alt="Inellis" class="character-thumb">
+                    <div class="character-name">Inellis</div>
+                    <div class="character-tags">
+                      <span class="tag tag-dps">DPS</span>
+                    </div>
+                  </div>
+                <span class="character-description">Inellis' combat skill and TA skill do additional damage for each stack of judgement.</li>
+              <li>Inellis leader skill boosts Ivorywing TA skill damage. Usually not worth it unless you have Ivorywing at awakening 3+.</li>
               <li>Make sure Ivorywing uses her TA skill the same round as Inellis for max damage, and that you have another character in the frontline with a defense buff.</li>
             </ul>
             
             <h4>Healing Synergy: Ghostsamurai + Freya</h4>
             <ul>
-              <li>Ghostsamurai is an amazing Ironclad because in addition to tanking and doing okay damage (for an Ironclad), she:
+              <li>
+                  <!-- GhostSamurai -->
+                  <div class="character-card">
+                    <img src="images/ghostsamurai thumbnail.jpg" alt="GhostSamurai" class="character-thumb">
+                    <div class="character-name">GhostSamurai</div>
+                    <div class="character-tags">
+                      <span class="tag tag-healer">Healer</span>
+                      <span class="tag tag-shield-team">Shield (Team)</span>
+                    </div>
+                  </div>
+                <span class="character-description">Ghostsamurai is an amazing Ironclad because in addition to tanking and doing okay damage (for an Ironclad), she:
                 <ol>
                   <li>Creates a shield for the entire team with her TA skill</li>
                   <li>Heals allied units passively.</li>
                 </ol>
               </li>
-              <li>To trigger her healing as often as possible, you need to apply time stop or stun to an enemy, which is why Freya pairs well with her.</li>
               <li>Her healing can be strong enough in some fights that you don't need a dedicated healer, and when you need a lot of healing is a great secondary healer since she doesn't take up a Spellweaver spot which is better reserved for a DPS or sub-DPS+buffer/debuffer.</li>
+              <li>
+                  <!-- Freya -->
+                  <div class="character-card">
+                    <img src="images/freya thumbnail.jpg" alt="Freya" class="character-thumb">
+                    <div class="character-name">Freya</div>
+                    <div class="character-tags">
+                      <span class="tag tag-dps">DPS</span>
+                      <span class="tag tag-stun">Stun</span>
+                    </div>
+                  </div>
+                <span class="character-description">To trigger her healing as often as possible, you need to apply time stop to an enemy, which is why Freya pairs well with her.</li>
+              
             </ul>
             
             <h4>Leticia Ultimate Combo</h4>
@@ -873,7 +890,6 @@
             </ul>
             
             <h3>Is Kaguya Bad?</h3>
-            <h4>Why you shouldn't use the Terra Blessing emblem set with Kaguya</h4>
             
             <p>On some tier lists, Kaguya is listed as a T2 or "EX" character despite being a 5-star rarity. Guides also frequently advise new players against selecting her or rerolling their account if they get her early. This has lead some to believe that she is a bad unit.</p>
             
