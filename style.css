@@ -313,7 +313,7 @@ header {
 .qa-accordion-content.active {
   max-height: 2000px;
   padding: 15px 0;
-  transition: none;  /* Removes transition when closing */
+  /*transition: none;   Removes transition when closing */
 }
 
 .qa-answer-wrapper {
@@ -345,6 +345,10 @@ header {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid rgba(255, 255, 255, 0.3);
+}
+
+.mirrored {
+  transform: scaleX(-1);
 }
 
 
