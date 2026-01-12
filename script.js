@@ -26,10 +26,15 @@
     
   });
 
-  // Accordion functionality
+  // Accordion functionality - handles both standard and Q&A accordions
   $('.accordion-header').click(function() {
     $(this).toggleClass('active');
     $(this).next('.accordion-content').toggleClass('active');
+  });
+  
+  $('.qa-accordion-header').click(function() {
+    $(this).toggleClass('active');
+    $(this).next('.qa-accordion-content').toggleClass('active');
   });
   
 })(jQuery);
