@@ -245,6 +245,108 @@ header {
   padding: 20px;
 }
 
+
+/* Q&A Accordion Styles */
+.qa-accordion {
+  margin-bottom: 20px;
+}
+
+.qa-accordion-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.qa-accordion-header:hover .qa-question-bubble {
+  background: rgba(0, 255, 255, 0.25);
+  border-color: rgba(0, 255, 255, 0.8);
+}
+
+.qa-character-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #00FFFF;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.qa-question-bubble {
+  flex: 1;
+  background: rgba(0, 255, 255, 0.15);
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 15px 20px;
+  position: relative;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+
+/* Speech bubble pointer */
+.qa-question-bubble:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgba(0, 255, 255, 0.5);
+}
+
+.qa-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  padding: 0;
+  margin-left: 75px; /* Aligns with question text */
+}
+
+.qa-accordion-content.active {
+  max-height: 2000px;
+  padding: 15px 0;
+}
+
+.qa-answer-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.qa-answer-bubble {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 15px 20px;
+  position: relative;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* Speech bubble pointer for answer (points right) */
+.qa-answer-bubble:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid rgba(255, 255, 255, 0.3);
+}
+
+
 /* Added styling for the tier list */
 /* Tier List Styles */
 .tier-table {
