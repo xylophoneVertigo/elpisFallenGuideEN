@@ -680,8 +680,8 @@ header {
 
 /* Section title underlines */
 .section-title {
-  display: inline-block;
-  border-bottom: 3px solid #00FFFF;
+  display: block;
+  border-bottom: 2px solid #00FFFF;
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
