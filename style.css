@@ -696,7 +696,7 @@ header {
 
 /* Use for large images placed between paragraphs, ensures that the image is centered and doesn't excede content width */
 .guide-image {
-  max-width: 100%;
+  max-width: 800px;
   height: auto;
   display: block;
   margin: 1rem auto; /* Centers the image and adds spacing */
